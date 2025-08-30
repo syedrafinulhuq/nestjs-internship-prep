@@ -68,3 +68,7 @@ console.log(square)
 const nameArr = ['Amy', 'John', 'Elizabeth', 'Harmony', 'Tom']
 const findGreaterName = nameArr.filter(name => name.length > 4);
 console.log(findGreaterName);
+
+const lowercaseName = ['hello', 'world', 'how r u ?', 'my name is Amy']
+const uppercaseName = lowercaseName.map(name => name.toUpperCase())
+console.log(uppercaseName);
