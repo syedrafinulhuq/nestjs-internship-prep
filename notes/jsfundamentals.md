@@ -7,7 +7,7 @@
 * Image diagram link (you can embed it if you want)
 * Immutability with `Object.freeze`
 
-Here’s the \*\*ready-to-paste `README.md`:
+
 
 ---
 
