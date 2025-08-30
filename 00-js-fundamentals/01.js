@@ -26,3 +26,45 @@ for(i=0; i<studentName.length; i++){
     studentName[i] = "Rafinul" + i
 }
 console.log("After Loop", studentName)
+
+
+
+/*
+
+❤️ What I learned?
+
+1. Let and Const are different declaration type. 
+2. let can be reassigned✅
+3. const cannot be reassinged❌
+4. both let and const can be modified✅
+
+
+*/
+
+
+
+// Arrow Function 
+
+let sumName = (firstName,lastName) => firstName + lastName; 
+const sumNumber = (a,b) => a + b;
+
+console.log(sumName("Rafi", "Nul"))
+console.log(sumName("Sham", "sul"))
+console.log(sumNumber(10,5))
+console.log(sumNumber(12.6, 17))
+
+
+const numbers = [1,2,3,4,5]
+
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
+
+const even = numbers.filter(num => num % 2 === 0)
+console.log(even);
+
+const square = numbers.map(num => num ** 2)
+console.log(square)
+
+const nameArr = ['Amy', 'John', 'Elizabeth', 'Harmony', 'Tom']
+const findGreaterName = nameArr.filter(name => name.length > 4);
+console.log(findGreaterName);
