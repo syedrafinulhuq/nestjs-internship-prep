@@ -86,19 +86,59 @@ const primes = primeNumbers.filter(checkePrime)
 console.log(primes);
 
 
-const mixNumber = [-1,2,-3,4,5]
+const mixNumber = [-1, 2, -3, 4, 5]
 const countPostive = mixNumber.filter(num => num > 0)
 console.log(countPostive)
 
 const comboWords = ['madam', 'baba', 'newyork', 'starter', 'apple'];
 
 const checkPalindrome = (word) => {
-  const cleaned = word.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
-  return cleaned === [...cleaned].reverse().join('');
+    const cleaned = word.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+    return cleaned === [...cleaned].reverse().join('');
 };
 console.log(comboWords.map(word => checkPalindrome(word)));
 
 
-comboWords.forEach(word =>{
-    console.log(`${word} => ${checkPalindrome(word)? "Palindrome✅" : "Not Palindrome❌"}`)
+comboWords.forEach(word => {
+    console.log(`${word} => ${checkPalindrome(word) ? "Palindrome✅" : "Not Palindrome❌"}`)
 })
+
+/*
+
+❤️ What did I learned?
+
+1. arrow function can take multiple values 
+2. it has functions like : map(), filter(), slice(), strip() 
+3. it can also be written in a single line 
+4. it can also work as a separate variable like function
+
+
+*/
+
+
+// Destructuring 
+
+let nameString = ['Ajwah', 'Mithai', 'Bikrampuri']
+let [first, second, third] = nameString
+console.log(first)
+console.log(second)
+console.log(third)
+
+const numberDestruct = [10, 203, 5056, 545, 30, 103]
+const [num1, num2, num3, num4, ...rest] = numberDestruct
+console.log(num1)
+console.log(num2)
+console.log(num3)
+console.log(num4)
+console.log(rest)
+
+
+const userDetails = { username: "Rafinul", age: 20, passion: "coding" }
+
+const { username, age, passion } = userDetails
+
+console.log(username)
+console.log(age)     
+console.log(passion) 
+
+
