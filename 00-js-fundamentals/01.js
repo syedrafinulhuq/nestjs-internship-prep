@@ -142,3 +142,37 @@ console.log(age)
 console.log(passion) 
 
 
+
+// const applogin = { userID: 20012, userFirstName: "Rafi", userLastName: "Nul", userAge: 24, userPassion: "Coding"}
+
+// const [ID, fName, lName, uAge, uPassion] = applogin
+
+// console.log(ID)
+// console.log(fName)
+// console.log(lName)
+// console.log(uAge)
+// console.log(uPassion)
+
+
+// Destructuring
+
+/*
+
+❤️What did I learned?
+
+1. Destructuring means splitting from Array or Dictionary 
+2. In array [] is used to split
+3. In dictionary {} is used to split
+
+In JavaScript:
+
+[] → used for arrays
+
+{} → used for objects
+
+*/
+
+//  Asynch Await
+
+
+

@@ -143,4 +143,3 @@ Before Node.js, make sure you’re comfortable writing **modern JavaScript**, ha
 
 ---
 
-👉 Do you want me to create a **mini practice checklist/exercises** for these prerequisites (with small coding tasks you can try right away)?
