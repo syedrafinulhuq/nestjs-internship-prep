@@ -174,5 +174,33 @@ In JavaScript:
 
 //  Asynch Await
 
+const timeOutTest = setTimeout (()=>
+{
+console.log("Hello World")
+},2000)
 
 
+// Blocking Function Non Async
+function blockfor2Seconds(){
+    const start = Date.now()
+    while(Date.now() - start < 2000){
+        console.log("Done Loading!")
+    }
+}
+
+console.log("Blocking Function Executed")
+// blockfor2Seconds()
+console.log("End of Blocking Function")
+
+// Non Blocking Asynch Await
+
+let nonblockfor2seconds = () =>{
+
+    setTimeout(() => {
+        console.log("Done Waiting!")
+    },2000);
+}
+
+nonblockfor2seconds();
+
+console.log("End of Non Blocking Function")
