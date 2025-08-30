@@ -22,7 +22,7 @@ console.log(studentNameArr)
 
 const studentName = ['Rafi', 'Shafi', 'Nazrul', 'Jamil']
 
-for(i=0; i<studentName.length; i++){
+for (i = 0; i < studentName.length; i++) {
     studentName[i] = "Rafinul" + i
 }
 console.log("After Loop", studentName)
@@ -45,16 +45,16 @@ console.log("After Loop", studentName)
 
 // Arrow Function 
 
-let sumName = (firstName,lastName) => firstName + lastName; 
-const sumNumber = (a,b) => a + b;
+let sumName = (firstName, lastName) => firstName + lastName;
+const sumNumber = (a, b) => a + b;
 
 console.log(sumName("Rafi", "Nul"))
 console.log(sumName("Sham", "sul"))
-console.log(sumNumber(10,5))
+console.log(sumNumber(10, 5))
 console.log(sumNumber(12.6, 17))
 
 
-const numbers = [1,2,3,4,5]
+const numbers = [1, 2, 3, 4, 5]
 
 const doubled = numbers.map(num => num * 2);
 console.log(doubled);
@@ -72,3 +72,15 @@ console.log(findGreaterName);
 const lowercaseName = ['hello', 'world', 'how r u ?', 'my name is Amy']
 const uppercaseName = lowercaseName.map(name => name.toUpperCase())
 console.log(uppercaseName);
+
+const primeNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const checkePrime = num => {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+const primes = primeNumbers.filter(checkePrime)
+console.log(primes);
