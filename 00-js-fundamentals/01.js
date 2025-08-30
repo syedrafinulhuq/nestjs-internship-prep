@@ -84,3 +84,21 @@ const checkePrime = num => {
 
 const primes = primeNumbers.filter(checkePrime)
 console.log(primes);
+
+
+const mixNumber = [-1,2,-3,4,5]
+const countPostive = mixNumber.filter(num => num > 0)
+console.log(countPostive)
+
+const comboWords = ['madam', 'baba', 'newyork', 'starter', 'apple'];
+
+const checkPalindrome = (word) => {
+  const cleaned = word.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+  return cleaned === [...cleaned].reverse().join('');
+};
+console.log(comboWords.map(word => checkPalindrome(word)));
+
+
+comboWords.forEach(word =>{
+    console.log(`${word} => ${checkPalindrome(word)? "Palindrome✅" : "Not Palindrome❌"}`)
+})
