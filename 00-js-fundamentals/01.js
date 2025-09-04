@@ -2,30 +2,30 @@
 
 // Variables
 
-let counter = 0
-counter = 1
-console.log(counter)
+// let counter = 0
+// counter = 1
+// console.log(counter)
 
-const pi = 3.14
-// pi = 3.1416
-console.log(pi)
+// const pi = 3.14
+// // pi = 3.1416
+// console.log(pi)
 
-let name = "rafi"
-name = "rafinul"
-console.log(name)
+// let name = "rafi"
+// name = "rafinul"
+// console.log(name)
 
-const studentNameArr = ['Rafi', 'Shafi', 'Nazrul', 'Jamil']
-studentNameArr[0] = 'Safayet'
-console.log(studentNameArr)
+// const studentNameArr = ['Rafi', 'Shafi', 'Nazrul', 'Jamil']
+// studentNameArr[0] = 'Safayet'
+// console.log(studentNameArr)
 
 // Variable with Loop
 
-const studentName = ['Rafi', 'Shafi', 'Nazrul', 'Jamil']
+// const studentName = ['Rafi', 'Shafi', 'Nazrul', 'Jamil']
 
-for (i = 0; i < studentName.length; i++) {
-    studentName[i] = "Rafinul" + i
-}
-console.log("After Loop", studentName)
+// for (i = 0; i < studentName.length; i++) {
+//     studentName[i] = "Rafinul" + i
+// }
+// console.log("After Loop", studentName)
 
 
 
@@ -45,63 +45,63 @@ console.log("After Loop", studentName)
 
 // Arrow Function 
 
-let sumName = (firstName, lastName) => firstName + lastName;
-const sumNumber = (a, b) => a + b;
+// let sumName = (firstName, lastName) => firstName + lastName;
+// const sumNumber = (a, b) => a + b;
 
-console.log(sumName("Rafi", "Nul"))
-console.log(sumName("Sham", "sul"))
-console.log(sumNumber(10, 5))
-console.log(sumNumber(12.6, 17))
-
-
-const numbers = [1, 2, 3, 4, 5]
-
-const doubled = numbers.map(num => num * 2);
-console.log(doubled);
-
-const even = numbers.filter(num => num % 2 === 0)
-console.log(even);
-
-const square = numbers.map(num => num ** 2)
-console.log(square)
-
-const nameArr = ['Amy', 'John', 'Elizabeth', 'Harmony', 'Tom']
-const findGreaterName = nameArr.filter(name => name.length > 4);
-console.log(findGreaterName);
-
-const lowercaseName = ['hello', 'world', 'how r u ?', 'my name is Amy']
-const uppercaseName = lowercaseName.map(name => name.toUpperCase())
-console.log(uppercaseName);
-
-const primeNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const checkePrime = num => {
-    if (num <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) return false;
-    }
-    return true;
-}
-
-const primes = primeNumbers.filter(checkePrime)
-console.log(primes);
+// console.log(sumName("Rafi", "Nul"))
+// console.log(sumName("Sham", "sul"))
+// console.log(sumNumber(10, 5))
+// console.log(sumNumber(12.6, 17))
 
 
-const mixNumber = [-1, 2, -3, 4, 5]
-const countPostive = mixNumber.filter(num => num > 0)
-console.log(countPostive)
+// const numbers = [1, 2, 3, 4, 5]
 
-const comboWords = ['madam', 'baba', 'newyork', 'starter', 'apple'];
+// const doubled = numbers.map(num => num * 2);
+// console.log(doubled);
 
-const checkPalindrome = (word) => {
-    const cleaned = word.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
-    return cleaned === [...cleaned].reverse().join('');
-};
-console.log(comboWords.map(word => checkPalindrome(word)));
+// const even = numbers.filter(num => num % 2 === 0)
+// console.log(even);
+
+// const square = numbers.map(num => num ** 2)
+// console.log(square)
+
+// const nameArr = ['Amy', 'John', 'Elizabeth', 'Harmony', 'Tom']
+// const findGreaterName = nameArr.filter(name => name.length > 4);
+// console.log(findGreaterName);
+
+// const lowercaseName = ['hello', 'world', 'how r u ?', 'my name is Amy']
+// const uppercaseName = lowercaseName.map(name => name.toUpperCase())
+// console.log(uppercaseName);
+
+// const primeNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const checkePrime = num => {
+//     if (num <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+
+// const primes = primeNumbers.filter(checkePrime)
+// console.log(primes);
 
 
-comboWords.forEach(word => {
-    console.log(`${word} => ${checkPalindrome(word) ? "Palindrome✅" : "Not Palindrome❌"}`)
-})
+// const mixNumber = [-1, 2, -3, 4, 5]
+// const countPostive = mixNumber.filter(num => num > 0)
+// console.log(countPostive)
+
+// const comboWords = ['madam', 'baba', 'newyork', 'starter', 'apple'];
+
+// const checkPalindrome = (word) => {
+//     const cleaned = word.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+//     return cleaned === [...cleaned].reverse().join('');
+// };
+// console.log(comboWords.map(word => checkPalindrome(word)));
+
+
+// comboWords.forEach(word => {
+//     console.log(`${word} => ${checkPalindrome(word) ? "Palindrome✅" : "Not Palindrome❌"}`)
+// })
 
 /*
 
@@ -118,28 +118,28 @@ comboWords.forEach(word => {
 
 // Destructuring 
 
-let nameString = ['Ajwah', 'Mithai', 'Bikrampuri']
-let [first, second, third] = nameString
-console.log(first)
-console.log(second)
-console.log(third)
+// let nameString = ['Ajwah', 'Mithai', 'Bikrampuri']
+// let [first, second, third] = nameString
+// console.log(first)
+// console.log(second)
+// console.log(third)
 
-const numberDestruct = [10, 203, 5056, 545, 30, 103]
-const [num1, num2, num3, num4, ...rest] = numberDestruct
-console.log(num1)
-console.log(num2)
-console.log(num3)
-console.log(num4)
-console.log(rest)
+// const numberDestruct = [10, 203, 5056, 545, 30, 103]
+// const [num1, num2, num3, num4, ...rest] = numberDestruct
+// console.log(num1)
+// console.log(num2)
+// console.log(num3)
+// console.log(num4)
+// console.log(rest)
 
 
-const userDetails = { username: "Rafinul", age: 20, passion: "coding" }
+// const userDetails = { username: "Rafinul", age: 20, passion: "coding" }
 
-const { username, age, passion } = userDetails
+// const { username, age, passion } = userDetails
 
-console.log(username)
-console.log(age)     
-console.log(passion) 
+// console.log(username)
+// console.log(age)     
+// console.log(passion) 
 
 
 
@@ -174,33 +174,56 @@ In JavaScript:
 
 //  Asynch Await
 
-const timeOutTest = setTimeout (()=>
-{
-console.log("Hello World")
-},2000)
+// const timeOutTest = setTimeout (()=>
+// {
+// console.log("Hello World")
+// },2000)
 
 
 // Blocking Function Non Async
-function blockfor2Seconds(){
-    const start = Date.now()
-    while(Date.now() - start < 2000){
-        console.log("Done Loading!")
-    }
-}
+// function blockfor2Seconds(){
+//     const start = Date.now()
+//     while(Date.now() - start < 2000){
+//         console.log("Done Loading!")
+//     }
+// }
 
-console.log("Blocking Function Executed")
+// console.log("Blocking Function Executed")
 // blockfor2Seconds()
-console.log("End of Blocking Function")
+// console.log("End of Blocking Function")
 
 // Non Blocking Asynch Await
 
-let nonblockfor2seconds = () =>{
+// let nonblockfor2seconds = () =>{
 
-    setTimeout(() => {
-        console.log("Done Waiting!")
-    },2000);
-}
+//     setTimeout(() => {
+//         console.log("Done Waiting!")
+//     },2000);
+// }
 
-nonblockfor2seconds();
+// nonblockfor2seconds();
 
-console.log("End of Non Blocking Function")
+// console.log("End of Non Blocking Function")
+
+
+// Synchronous Customer-Waiter Scenario
+
+// function processOrder(){
+//     console.log("processing order from customer 1")
+//     let currTime = Date.now()
+//     while (Date.now() < 3000+currTime){
+        
+//     }
+//     console.log("processing finished for customer 1")
+// }
+
+
+// console.log("Take order from customer 1")
+// processOrder()
+// console.log("Take order from customer 2");
+
+
+
+
+
+
